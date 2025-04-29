@@ -1,0 +1,51 @@
+Suricata Commands:
+
+Install Suricata:
+
+sudo apt update
+sudo apt install suricata
+
+Check Version:
+
+suricata --build-info
+
+Start Service:
+
+sudo systemctl start suricata
+
+Enable at Boot:
+
+sudo systemctl enable suricata
+
+Check Status:
+
+sudo systemctl status suricata
+
+Test Config:
+
+sudo suricata -T -c /etc/suricata/suricata.yaml
+
+Run Live (Specific Interface):
+
+sudo suricata -i eth0
+
+Analyze PCAP File:
+
+sudo suricata -r sample.pcap
+
+Reload Rules:
+
+sudo suricatasc -c reload-rules
+
+Update Rules:
+
+sudo suricata-update
+
+View Logs:
+
+sudo tail -f /var/log/suricata/suricata.log
+
+Stop Service:
+
+sudo systemctl stop suricata
+

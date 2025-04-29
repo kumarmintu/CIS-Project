@@ -1,0 +1,13 @@
+def generate_topology():
+    print("[ IBM SDS Cloud ]")
+    print("       |")
+    print("    [Virtual Network]")
+    print("       |")
+    print("    [ Windows Server VM ]")
+    print("     | (Static IP: 192.168.1.10, DNS: 8.8.8.8)")
+    print("       |")
+    print(" [ Active Directory Domain Controller ]")
+    print("       |")
+    print(" Domain: example.local")
+
+generate_topology()

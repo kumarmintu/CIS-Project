@@ -1,0 +1,44 @@
+Splunk Commands:
+
+Install Splunk:
+
+wget -O splunk-9.x.x-Linux-x86_64.tgz 'https://download.splunk.com/products/splunk/releases/9.x.x/linux/splunk-9.x.x-Linux-x86_64.tgz'
+tar -xvzf splunk-9.x.x-Linux-x86_64.tgz
+sudo mv splunk /opt/
+
+Start Splunk:
+
+sudo /opt/splunk/bin/splunk start --accept-license
+
+Enable Boot-Start for Splunk:
+
+sudo /opt/splunk/bin/splunk enable boot-start
+
+Access Splunk Web Interface:
+
+Open a browser: http://<server-ip>:8000
+
+Check Splunk Status:
+
+sudo /opt/splunk/bin/splunk status
+
+Stop Splunk:
+
+sudo /opt/splunk/bin/splunk stop
+
+Restart Splunk:
+
+sudo /opt/splunk/bin/splunk restart
+
+Monitor a File/Directory:
+
+sudo /opt/splunk/bin/splunk add monitor /var/log/
+
+List Monitored Inputs:
+
+sudo /opt/splunk/bin/splunk list monitor
+
+Search Example (from Splunk CLI):
+
+sudo /opt/splunk/bin/splunk search 'index=_internal | head 10'
+

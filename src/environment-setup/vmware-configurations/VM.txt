@@ -1,0 +1,9 @@
+Appendix-1: Virtual Machine Configuration Details
+•          Host Machine: Intel i5, 16GB RAM, 512GB SSD
+•          VM1: Ubuntu Server 20.04, 4GB RAM, 2 vCPU
+•          VM2: Kali Linux 2023.1, 2GB RAM, 2 vCPU
+•          VM3: Windows Server 2019, 4GB RAM, 2 vCPU
+•          VM4: Ubuntu Desktop (Monitoring), 2GB RAM, 1 vCPU
+Appendix-2: Security Tool Installation Guides
+•          Step-by-step instructions for installing and configuring pfSense, Snort, 
+Wireshark, and Nagios

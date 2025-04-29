@@ -1,0 +1,43 @@
+Snort Commands:
+
+Install Snort:
+
+sudo apt update
+sudo apt install snort
+
+Check Version:
+
+snort -V
+
+Start Snort in Intrusion Detection Mode:
+
+sudo snort -A console -i eth0 -c /etc/snort/snort.conf
+
+Test Snort Configuration:
+
+sudo snort -T -c /etc/snort/snort.conf
+
+Run Snort on a PCAP File:
+
+sudo snort -r sample.pcap
+
+Run Snort with Custom Rules:
+
+sudo snort -A console -i eth0 -c /etc/snort/snort.conf -K ascii
+
+View Snort Logs:
+
+sudo tail -f /var/log/snort/alert
+
+Update Snort Rules Manually:
+(Download updated rules and replace in /etc/snort/rules/)
+
+Stop Snort:
+(If running manually, use Ctrl+C)
+
+Basic Example to Start Snort Service (if configured as service):
+
+sudo systemctl start snort
+sudo systemctl enable snort
+sudo systemctl status snort
+

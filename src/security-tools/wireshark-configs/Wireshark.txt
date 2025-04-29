@@ -1,0 +1,41 @@
+Wireshark Commands:
+
+Install Wireshark:
+
+sudo apt update
+sudo apt install wireshark
+
+Check Version:
+
+wireshark --version
+
+Start Wireshark (GUI Mode):
+
+wireshark
+
+Start Wireshark (CLI Mode using TShark):
+
+tshark -i eth0
+
+Capture Packets and Save to a File:
+
+sudo tshark -i eth0 -w capture.pcap
+
+Read and Analyze a Saved PCAP File:
+
+tshark -r capture.pcap
+
+Capture Specific Traffic (e.g., port 80 only):
+
+sudo tshark -i eth0 -f "port 80"
+
+View Available Interfaces:
+
+tshark -D
+
+Apply Display Filters (e.g., only TCP traffic):
+
+tshark -i eth0 -Y "tcp"
+
+Stop Capture:
+(Use Ctrl+C in terminal)

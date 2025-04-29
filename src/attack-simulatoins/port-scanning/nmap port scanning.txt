@@ -1,0 +1,41 @@
+Install Nmap:
+
+sudo apt update
+sudo apt install nmap
+
+Check Version:
+
+nmap --version
+
+Simple Scan:
+
+nmap <target-ip>
+
+Scan Multiple IPs:
+
+nmap 192.168.1.1 192.168.1.2
+
+Scan a Range:
+
+nmap 192.168.1.1-50
+
+Scan Subnet:
+
+nmap 192.168.1.0/24
+
+Service Version Detection:
+
+nmap -sV <target-ip>
+
+Aggressive Scan:
+
+nmap -A <target-ip>
+
+Scan Specific Ports:
+
+nmap -p 22,80,443 <target-ip>
+
+Output to File:
+
+nmap -oN output.txt <target-ip>
+

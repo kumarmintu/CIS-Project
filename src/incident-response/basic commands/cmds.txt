@@ -1,0 +1,14 @@
+whoami
+hostname
+ipconfig /all (Windows)
+ifconfig (Linux)
+netstat -ano (Windows)
+netstat -tunlp (Linux)
+tasklist (Windows)
+ps aux (Linux)
+schtasks /query /fo LIST /v (Windows)
+crontab -l (Linux)
+wmic process list full (Windows)
+ls -la /etc/cron* (Linux)
+eventvwr.msc (Windows Event Viewer)
+dmesg | less (Linux system logs)s
